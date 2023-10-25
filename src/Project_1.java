@@ -24,13 +24,15 @@ public class Project_1 extends World {
             }
             plane.teleport(0, plane.ypos + 10);
         }
-        whatsmyname();
-        plane.teleport((int)(Math.random()*700), plane.random(100, 500));
-        whatsmyname();
-        plane.teleport(plane.random(100, 500), plane.random(100, 500));
-        whatsmyname();
-        plane.teleport(plane.random(100, 500), plane.random(100, 500));
-        whatsmyname();
+        for (int a = 1; a < 70; a = a + 1) {
+            whatsmyname();
+            plane.teleport((int) (Math.random() * 700), plane.random(100, 500));
+            whatsmyname();
+            plane.teleport(plane.random(100, 500), plane.random(100, 500));
+            whatsmyname();
+            plane.teleport(plane.random(100, 500), plane.random(100, 500));
+            whatsmyname();
+        }
 
         for (int row = 1; row < 1000; row = row + 1) {
             for (int col = 1; col < 1000; col++) {
